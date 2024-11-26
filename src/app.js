@@ -1,9 +1,9 @@
 /* eslint-disable */
-import "bootstrap";
+/*import "bootstrap";
 import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+import "./assets/img/4geeks.ico";*/
 
 window.onload = function() {
   let pronombres = ["the", "our"];
@@ -17,7 +17,7 @@ window.onload = function() {
       for (let k = 0; k < sustantivos.length; k++) {
         for (let h = 0; h < dominios.length; h++) {
           let dominio = `${pronombres[i]}${adjetivos[j]}${sustantivos[k]}${dominios[h]}`;
-          console.log(dominio); // Muestra el dominio en la consola
+          console.log(dominio); // Muestra el dominio en la consola pero lo muestra
           let span = document.createElement("span");
           span.textContent = `${dominio}  //  `;
           resultado.appendChild(span);
