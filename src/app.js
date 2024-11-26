@@ -10,13 +10,17 @@ window.onload = function() {
   let adjetivos = ["great", "big"];
   let sustantivos = ["jogger", "racoon"];
   let dominios = [".io", ".com", ".es"];
-  console.log("Hello Rigo from the console!");
+  let resultado = document.getElementById("resultado");
 
   for (let i = 0; i < pronombres.length; i++) {
     for (let j = 0; j < adjetivos.length; j++) {
       for (let k = 0; k < sustantivos.length; k++) {
         for (let h = 0; h < dominios.length; h++) {
-          console.log(`${pronombres},${adjetivos},${sustantivos},${dominios}`);
+          let dominio = `${pronombres[i]}${adjetivos[j]}${sustantivos[k]}${dominios[h]}`;
+          console.log(dominio); // Muestra el dominio en la consola
+          let span = document.createElement("span");
+          span.textContent = `${dominio}  //  `;
+          resultado.appendChild(span);
         }
       }
     }
