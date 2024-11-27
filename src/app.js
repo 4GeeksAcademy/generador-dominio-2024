@@ -16,7 +16,10 @@ window.onload = function() {
     for (let j = 0; j < adjetivos.length; j++) {
       for (let k = 0; k < sustantivos.length; k++) {
         for (let h = 0; h < dominios.length; h++) {
-          console.log(`${pronombres},${adjetivos},${sustantivos},${dominios}`);
+          /*console.log(`${pronombres}${adjetivos}${sustantivos}${dominios}`);*/
+          console.log(
+            pronombres[i] + adjetivos[j] + sustantivos[k] + dominios[h]
+          );
         }
       }
     }
